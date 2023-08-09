@@ -68,24 +68,26 @@ async function handleDaysChange(event){
         setIsLoading(true);
         if(isCoin2){
             setCrypto2(event.target.value);
+            console.log("crypto2 is ", event.target.value)
             const data= await getCoinData(event.target.value)
            
                 coinObject(setCrypto2Data,data);
                 const prices1=await getCoinPrices(crypto1,days,priceType)
                 const prices2=await getCoinPrices(crypto2,days,priceType)
-                if(prices1.length>0 && prices2.length>0){
-                    console.log("both prices fetched");
+                // if(prices1.length>0 && prices2.length>0){
+                //     console.log("both prices fetched");
         
                     // settingChartData(setChartData,prices)
                     setIsLoading(false);
-                }
+                // }
                 
             
         }else{
             setCrypto1(event.target.value)
             const data= await getCoinData(event.target.value)
-            
+            console.log("crypto1 is ", event.target.value)
                 coinObject(setCrypto1Data,data);
+                setIsLoading(false);
             
         }
 
