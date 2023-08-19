@@ -144,3 +144,8 @@
       padding: 0.35rem;
     }
   }
+  @media only screen and (max-width: 400px) {
+     .grid-container{
+      width: auto;
+     }
+  }

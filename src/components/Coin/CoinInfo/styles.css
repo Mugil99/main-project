@@ -13,3 +13,11 @@
 .coin-info-desc a:hover{
     color:var(--blue)!important;
 }
+@media only screen and (max-width: 425px){
+    .coin-info-heading{
+        font-size: medium;
+    }
+    .coin-info-desc{
+        font-size: small;
+    }
+ }

@@ -56,7 +56,7 @@ function DashboardPage() {
           </div>
         )
       }
-      <Footer/>
+      {search?<></>:<Footer/>}
       </>
         )}
     
