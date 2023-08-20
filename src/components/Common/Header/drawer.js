@@ -26,7 +26,7 @@ export default function TemporaryDrawer() {
             <NavLink to='/compare'>
                 <p className="link">Compare</p>
             </NavLink>
-            <NavLink to='/wathlist'>
+            <NavLink to='/watchlist'>
                 <p className="link">Watchlist</p>
             </NavLink>
             <NavLink to='/dashboard'>
